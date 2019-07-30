@@ -1,0 +1,32 @@
+{
+  "name": "imbecil",
+  "version": "1.0.0",
+  "description": "Quick scraping project. Gathering names that apply to the current president of Brazil.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"TDD, lolwut?\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edo9k/imbecil-js.git"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "cheerio",
+    "scraping",
+    "shithead",
+    "president"
+  ],
+  "author": "Eduardo França",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edo9k/imbecil-js/issues"
+  },
+  "homepage": "https://github.com/edo9k/imbecil-js#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "iconv-lite": "^0.5.0",
+    "request": "^2.88.0"
+  }
+}
