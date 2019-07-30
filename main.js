@@ -32,10 +32,18 @@ for (word of words) {
     let html = iconv.decode(body, 'ISO-8859-1')
     let $ = cheerio.load(html) //, { decodeEntities: false } )
     let $sins = $('.sinonimo')
+    let wordList = []
 
-    $sins.each(function() { console.log($(this).text())})
+
+    $sins.each(function() { 
+      wordList.push( $(this).text() )          
+    })
+
+    console.log(`${word} -> ${wordList.join(', ')}.`)
+    console.log('---- *** ---')
+
+    file.writeFileSync(`./${word}.txt`, wordList.join('\n'))
 
   })
 }
-
 
